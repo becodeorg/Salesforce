@@ -1,0 +1,61 @@
+.timeline {
+    width: 100%;
+    max-width: 100%; 
+}
+
+.timeline-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.timeline-campus {
+    width: 100px;
+    flex-shrink: 0;
+}
+
+.timeline-bars {
+    flex-grow: 1;
+    position: relative;
+    height: 30px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.timeline-bar {
+    position: absolute;
+    height: 10px;
+    background-color: #0070d2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.password-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 200px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}

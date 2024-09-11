@@ -1,0 +1,18 @@
+<template>
+    <template if:true={isAuthenticated}>
+        <div class="container" lwc:dom="manual"></div>
+    </template>
+    <template if:false={isAuthenticated}>
+        <div class="password-container">
+            <input type="password" 
+                   class="password-input" 
+                   placeholder="Enter password" 
+                   onchange={handlePasswordChange} 
+                   onkeyup={handleKeyUp}/>
+            <button class="submit-button" onclick={validatePassword}>Submit</button>
+            <template if:true={errorMessage}>
+                <p class="error-message">{errorMessage}</p>
+            </template>
+        </div>
+    </template>
+</template>
